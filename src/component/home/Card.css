@@ -1,0 +1,62 @@
+
+.services {
+    display: flex; /* جعل العناصر تظهر بجانب بعضها بشكل أفقي */
+    flex-wrap: wrap; /* السماح للعناصر بالتفاف عندما تتجاوز العرض المتاح */
+    justify-content: center; /* توسيط العناصر أفقيًا في الصفحة */
+    margin-top: 130vh;
+  }  
+.service-card {
+    border: 1px solid #ccc; /* إضافة حدود للكرت */
+    border-radius: 5px; /* تقويس حواف الكرت */
+    padding: 20px; /* تباعد داخلي للكرت */
+    margin: 10px; /* هامش بين الكروت */
+    width: 300px; /* عرض الكرت */
+    overflow: hidden; /* إخفاء أي محتوى يتجاوز حجم العنصر */
+  }
+  .service-card:hover {
+    transform: scale(1.05);
+    background-color: #4e18ba; /* تغيير لون الخلفية عند التحويم */
+    color: #fff; /* تغيير لون النص عند التحويم */
+    border-color: #fff; /* تغيير لون الإطار عند التحويم */
+  }
+  
+  
+  .service-card img {
+    width: 100%; /* جعل الصورة تمتد لتغطي العرض بالكامل */
+    height: auto; /* السماح للارتفاع بالتغير بشكل تلقائي مع العرض */
+  }
+  
+  .service-card h2 {
+    margin-top: 20px;  /* توجيه النص العربي من اليمين إلى اليسار */
+  text-align: left;
+    
+    /* تباعد بادئة العنوان من الصورة */
+  }
+  .services{
+    color:#333;
+  }
+  .dark-mode .services{
+    color:#ccc;
+  }
+
+  .service-card p {
+    font-size: 16px; /* حجم الخط */
+    margin-top: 10px;
+      direction: rtl; /* توجيه النص من اليمين إلى اليسار */
+      text-align: left; /* محاذاة النص إلى اليسار */
+      white-space: nowrap; /* عرض النص في سطر واحد */
+      overflow: hidden; /* إخفاء النص الزائد */
+      text-overflow:ellipsis; /* عرض نقاط الانقطاع للنص الزائد */
+    
+  }
+  .dark-mode .service-card p {
+    color: #ccc;
+  }
+  
+  .service-card a {
+    display: block; /* جعل الرابط ياخذ كل العرض */
+    text-align: center; /* توسيط النص */
+    margin-top: 30px; /* توجيه النص العربي من اليمين إلى اليسار */
+    text-align: left; /* تباعد الرابط من النص */
+  }
+

@@ -1,0 +1,253 @@
+
+:root{
+  --purble: #4e18ba;
+}
+
+/* Light Mode Styles */
+body {
+  background-color:silver; /* White background */
+  color: #212121; /* Dark text color */
+  font-family: 'Cairo', sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light {
+  background-color: darkgray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* تأكيد عرض الـ navbar وراء الفيديو */
+}
+
+.navbar-light .navbar-brand {
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+}
+
+.navbar-light .nav-link {
+  color: #ffffff; /* Primary color for nav links */
+  text-decoration: none;
+}
+
+.navbar-light .nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-light .navbar-nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.navbar-light .navbar-nav li a {
+  color: #212121;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav li a:hover{
+  color: var(--purble);
+}
+/* Footer Styles */
+footer {
+  background-color: silver; /* White background */
+  color: purple; /* Primary color for footer text */
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.icon {
+  margin-right: 10px; /* تضبيط المسافة بين الأيقونات */
+}
+
+.social-icons a {
+  margin-right: 10px; /* تضاف مسافة بين الأيقونات */
+}
+
+.arabic-text {
+  position: absolute;
+  top: 15%; /* توسيط النص عموديًا بالنسبة للشاشة */
+  left: 50%; /* توسيط النص أفقيًا بالنسبة للشاشة */
+  transform: translate(-50%, -50%); /* نقل النص باتجاه اليسار والأعلى بناءً على نصف عرضه ونصف ارتفاعه */
+  direction: rtl; /* توجيه النص العربي من اليمين إلى اليسار */
+  text-align: center; /* تحديد محاذاة النص عند الوسط */
+  color:  #212121; /* لون النص */
+  font-family: 'Cairo', sans-serif; /* نوع الخط */
+  overflow: hidden; /* لإخفاء النص في البداية */
+  white-space: nowrap; /* لمنع النص من الانزلاق لأسفل عند الظهور */
+  animation: typing 3s steps(40, end); /* تعريف تأثير الكتابة التدريجي */
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 2;
+  align-items: center;
+  text-align: center; /* تحديد محاذاة النص عند الوسط */
+}
+
+
+.arabic-text h1 {
+  margin-bottom: 10px; /* تحديد المسافة بين الأسطر */
+}
+
+.arabic-text-p {
+  font-size: 25px;
+  padding: 10px;
+  direction: rtl; /* توجيه النص العربي من اليمين إلى اليسار */
+  text-align: center; /* تحديد محاذاة النص عند الوسط */
+  color: var(--purble); /* لون النص */
+  font-family: 'Cairo', sans-serif; /* نوع الخط */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exp-services {
+  position: absolute;
+  top: 42%; /* توسيط النص عموديًا بالنسبة للشاشة */
+  text-align: center;
+  border: 4px solid var(--purble);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 20px;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.exp-services:hover {
+  transform: scale(1.05);
+  background-color: var(--purble); /* تغيير لون الخلفية عند التحويم */
+  color: #fff; /* تغيير لون النص عند التحويم */
+  border-color: #fff; /* تغيير لون الإطار عند التحويم */
+}
+
+.purple-text {
+  color: var(--purble);
+  font-weight: bold; /* تطبيق تأثير عريض للنص */
+  font-size: 40px; /* تغيير حجم النص حسب الحاجة */
+  padding: 5px 10px; /* تحديد المسافة داخل الخلفية */
+  border-radius: 5px; /* تحديد زوايا الخلفية */
+}
+
+footer p {
+  display: inline-block; /* جعل النص في وسط ال footer */
+  margin: 0; /* إزالة الهوامش للنص */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #222; /* Dark background */
+  color: #ccc; /* Light text color */
+}
+
+.navbar-dark {
+  background-color: rgba(33, 33, 33, 0.8); /* لون الشريط العلوي بشكل داكن مع تأثير شفافية */
+  color: #ffffff; /* لون النص الفاتح */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-dark .navbar-brand {
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+}
+
+.navbar-dark .nav-link {
+  color: var(--purble); /* White text color for nav links */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-dark .nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-dark .navbar-nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.navbar-dark .navbar-nav li a {
+  color: var(--purble);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.dark-mode .exp-services{
+  color: #CCC;
+}
+
+/* Footer Styles */
+footer.dark-mode {
+  background-color: #212121; /* Dark gray background for footer */
+  color: purple; /* Light text color for footer */
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.sun-moon-icon:hover {
+  cursor: pointer; /* تغيير المؤشر إلى مؤشر اليد عند التحوم */
+  filter: brightness(120%); /* زيادة سطوع الصورة عند التحوم */
+}
+
+.dark-mode #home {
+  background-color: #222; /* خلفية سوداء في الوضع الليلي */
+}
+
+.dark-mode #home h1 {
+  color: #fff; /* كتابة بيضاء في الوضع الليلي */
+}
+
+.dark-mode #home .purple-text {
+  color: var; /* تحديد لون النص الأرجواني */
+}
+
+@keyframes typing {
+  from { width: 0; } /* العرض صفر في البداية للتأثير التدريجي */
+  to { width: 100%; } /* العرض يتزايد حتى يصل إلى العرض الكامل */
+}
+
+.cover-video {
+  position: absolute;
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2; /* تأكيد عرض الفيديو فوق الـ navbar */
+  opacity: .8;
+}
+
+#home {
+  position: relative;
+  z-index: 1; /* يجعل المحتوى يظهر فوق الفيديو */
+}
+
+

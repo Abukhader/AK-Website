@@ -1,0 +1,36 @@
+/* في ملف contact.css */
+
+.contact-section {
+    background-image: url('../../assets/contact.png');
+    opacity: 0.8;
+    padding: 50px; /* إضافة تباعد داخلي */
+    background-size: cover;
+    background-position: center;
+    direction: rtl; /* جعل الكتابة من اليمين إلى اليسار */
+}
+
+.contact-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    direction: rtl; /* جعل الكتابة من اليمين إلى اليسار */
+}
+.call-h2, .call-p{
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.contact-content h1,
+.contact-content p,
+.contact-content label,
+.contact-content input,
+.contact-content textarea {
+    color: #000; /* تغيير لون النص */
+    opacity: 1; /* جعل النص غير شفاف */
+    direction: rtl;
+     /* جعل الكتابة من اليمين إلى اليسار */
+}
+button[type="submit"] {
+    width: 100%; /* تعيين عرض الزر بنسبة 100% من عرض الشاشة */
+  }
+  
+
